@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <div class="top">
+        <div class="top-search">
+            <form id="myform">
+                <div>
+                    <label for="City"></label>
+                    <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                    <div class="error cityError"></div>
+                </div>
+    
+                <div>
+                    <label for="Country Code"></label>
+                    <input type="text" id="country-code" name="country-code" placeholder="Enter your country code" required>
+                    <div class="error countryError"></div>
+                </div>
+            </form>
+            <button id="submit" type="submit" form="myform">Search</button>
+        </div>
+    </div>
+    <div class="bot">
+        <div class="display-body">
+            <div class="stat">
+                <div class="brief-stat">
+                    <div id="destination"></div>
+                    <div class="icon-temp">
+                        <img id="weather-icon"></img>
+                        <div id="temperature"></div>
+                    </div>
+                    <div id="weather-condition"></div>
+                </div>
+                <div class="full-stat">
+                    <div class="left">
+                        <div id="humidity"></div>
+                        <div id="wind-speed"></div>
+                        <div id="pressure"></div>
+                    </div>
+                    <div class="right">
+                        <div id="dew-point"></div>
+                        <div id="visibility"></div>
+                        <div id="uv"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="map"></div>
+        </div>  
+        <div class="forecast">
+            <div class="hour-forecast"></div>
+            <div class="day-forecast">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

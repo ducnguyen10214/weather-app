@@ -1,0 +1,162 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0 0;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-search,
+.display-body,
+.display-stats,
+.forecast {
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.top-search {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+#myform {
+  font-weight: 700;
+  font-size: 1.4rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #f1faee;
+}
+
+input {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  border: 0px;
+  background-color: black;
+  color: white;
+  width: 15vw;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid white;
+}
+
+.error {
+  color: #e63946;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+#submit {
+  font-size: 1rem;
+  width: 5vw;
+  height: 3vh;
+  background-color: #ffffff;
+  color: black;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.display-body {
+  font-size: 1.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  background-color: #ffffff;
+  gap: 7rem;
+}
+
+#destination {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.brief-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-temp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#weather-condition {
+  font-weight: 600;
+}
+
+.full-stat {
+  display: flex;
+  flex-flow: row;
+  font-size: 1.2rem;
+  gap: 2rem;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-left: 2px solid blue;
+  margin-top: 1vh;
+}
+
+#temperature {
+  font-size: 2.5rem;
+}
+
+.day-forecast-title, .hour-forecast-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.day-forecast-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+}
+
+.day-forecast-icon {
+  width: 4.3rem;
+  height: auto;
+}
+
+.forecast {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5rem;
+}
+
+.chart {
+  margin-top: 2rem;
+}
+
+#map {
+  height: 30vh;
+  /* The height is 400 pixels */
+  width: 60vw;
+  /* The width is the width of the web page */
+}
+
+.bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
