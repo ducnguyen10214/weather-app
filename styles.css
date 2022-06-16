@@ -79,9 +79,8 @@ input:focus {
   font-size: 1.5rem;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
   background-color: #ffffff;
-  gap: 7rem;
+  gap: 5rem;
 }
 
 #destination {
@@ -158,5 +157,5 @@ input:focus {
 .bot {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-left: 5vw;
 }
