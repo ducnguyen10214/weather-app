@@ -81,6 +81,7 @@ input:focus {
   flex-flow: row wrap;
   background-color: #ffffff;
   gap: 5rem;
+  align-items: center;
 }
 
 #destination {
